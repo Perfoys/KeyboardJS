@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+}
+.TextArea {
+    margin-top: 1%;
+    width: 1000px;
+    height: 300px;
+    font-size: large;
+}
+.KeyBoard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 1100px;
+    height: 400px;
+    border: solid #1e1e1e 2px;
+    border-radius: 3px;
+}
+.Key {
+    padding: 1px;
+    margin: 1%;
+    min-width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border: solid #1e1e1e 2px;
+    border-radius: 3px;
+    color: #1e1e1e;
+    background-color: white;
+    font-size: large;
+    transition: 0.2s;
+}
+.Key:hover {
+    color: #00ffff;
+}
+.n13, .n17, .n18 {
+    width: 100px;
+}
+.n9, .n220 {
+    width: 80px;
+}
+.n20 {
+    width: 130px;
+}
+.n16 {
+    width: 150px;
+}
+.n32 {
+    width: 400px;
+}
