@@ -72,7 +72,8 @@ function KeyProcessing(keyCode, keyCName) {
         if (shift && enSymbols[keyCode] && !ruLang) textArea.value += key.textContent[1];
         else if (shift && numbersmap[keyCode]) textArea.value += key.textContent[1];
         else if (shift && ruSupSymbols[keyCode]) textArea.value += key.textContent[1];
-        else if (shift) textArea.value += key.textContent[0].toLocaleUpperCase();
+        else if (shift && !capslock) textArea.value += key.textContent[0].toLocaleUpperCase();
+        else if (shift && capslock) textArea.value += key.textContent[0].toLocaleUpperCase();
         else textArea.value += key.textContent[0];
     }
     else {
@@ -101,7 +102,6 @@ function KeyProcessing(keyCode, keyCName) {
 }
 
 function keyup(event) {
-    textArea = document.querySelector('.TextArea');
     let keyCode = (event.which) ? event.which : event.keyCode;
     let key = document.querySelector(`.n${keyCode}`);
     key.style.color = "#1e1e1e";
