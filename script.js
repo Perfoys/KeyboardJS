@@ -73,7 +73,7 @@ function KeyProcessing(keyCode, keyCName) {
         else if (shift && numbersmap[keyCode]) textArea.value += key.textContent[1];
         else if (shift && ruSupSymbols[keyCode]) textArea.value += key.textContent[1];
         else if (shift && !capslock) textArea.value += key.textContent[0].toLocaleUpperCase();
-        else if (shift && capslock) textArea.value += key.textContent[0].toLocaleUpperCase();
+        else if (shift && capslock) textArea.value += key.textContent[0].toLocaleLowerCase();
         else textArea.value += key.textContent[0];
     }
     else {
