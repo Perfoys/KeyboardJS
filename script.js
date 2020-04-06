@@ -6,6 +6,7 @@ var alt = false;
 document.addEventListener("DOMContentLoaded", function(event) {
     var textArea = document.createElement('textarea');
     var keyBoard = document.createElement('div');
+    textArea.setAttribute('readonly', 'readonly');
     textArea.className = 'TextArea';
     keyBoard.className = 'KeyBoard';
     document.body.appendChild(textArea);
