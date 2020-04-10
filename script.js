@@ -1,11 +1,11 @@
-var ruLang = false;
-var capslock = false;
-var shift = false;
-var alt = false;
+let ruLang = false;
+let capslock = false;
+let shift = false;
+let alt = false;
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    var textArea = document.createElement('textarea');
-    var keyBoard = document.createElement('div');
+    let textArea = document.createElement('textarea');
+    let keyBoard = document.createElement('div');
     textArea.setAttribute('readonly', 'readonly');
     textArea.className = 'TextArea';
     keyBoard.className = 'KeyBoard';
